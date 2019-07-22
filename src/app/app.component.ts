@@ -2,9 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: `<h1>{{title}}</h1>
+  <h2>{{hero}} Details</h2>`, 
+   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'tour-of-heroes';
+  title = 'Tour of Heroes'
+  hero = 'Windstorm'
 }
