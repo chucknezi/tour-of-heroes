@@ -6,9 +6,7 @@ import { Component } from '@angular/core';
   <h2>{{hero.name}} Details {{ hero.id }}</h2>
   <div><label>id: </label>{{hero.id}} </div>
   <div><label>name: </label>{{hero.name}} </div>
-
-
-  
+  <input [(ngModel)]="hero.name" placeholder="name">
   `, 
    styleUrls: ['./app.component.scss']
 })
